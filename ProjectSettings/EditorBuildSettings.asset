@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DriftCar/Scenes/Demo Track.unity
     guid: 39ca210972bd1064aa3abdf018626300
+  - enabled: 1
+    path: Assets/DriftCar/Scenes/RaceLevel1.unity
+    guid: c6d6e9870250ddf4e914ebddc780dc84
   m_configObjects: {}
