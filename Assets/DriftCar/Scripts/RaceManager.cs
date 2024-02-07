@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,6 +24,13 @@ public class RaceManager : MonoBehaviour
     private bool raceStarted = false;
     private float raceTime = 0f;
 
+
+
+    int currentMoney = PlayerMoney.moneyAmount;
+    public Text totalmoneyEarn;
+
+    public Text PlayerAllMoney;
+
     void Start()
     {
         StartCoroutine(CountdownToStart());
@@ -30,6 +38,7 @@ public class RaceManager : MonoBehaviour
 
     IEnumerator CountdownToStart()
     {
+        EndRaceCanvas.enabled = false;
         raceStartText.text = "Заедз начнется через:  5";
         yield return new WaitForSeconds(1f);
         raceStartText.text = "Заедз начнется через:  4";
@@ -61,13 +70,14 @@ public class RaceManager : MonoBehaviour
 
     void Update()
     {
-        EndRaceCanvas.enabled = false;
+        
         if (raceStarted)
         {
             raceTime += Time.deltaTime;
             timerText.text = "Время заезда: " + FormatRaceTime(raceTime);
 
         }
+        
     }
 
     void OnTriggerEnter(Collider other)
@@ -85,10 +95,13 @@ public class RaceManager : MonoBehaviour
 
     void FinishRace()
     {
+        raceStarted = false;
+        PlayerMoney.AddMoney(100);
+        totalmoneyEarn.text = "Денег заработано: 100";
+        PlayerAllMoney.text = "Всего денег: " + PlayerMoney.moneyAmount.ToString();
         timerText.text = " ";
-       // raceStarted = false;
         EndRaceCanvas.enabled = true;
         endracetimerText.text = "Время заезда - " + FormatRaceTime(raceTime);
-       // Time.timeScale = 0;
+        Time.timeScale = 0;
     }
 }
