@@ -1795,6 +1795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344745993}
   - component: {fileID: 344745994}
+  - component: {fileID: 344745995}
   m_Layer: 0
   m_Name: rs-sub
   m_TagString: Untagged
@@ -1913,6 +1914,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &344745995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344745992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f0d7cf6bf97c74d9b03b1c969d0d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicAudioSource: {fileID: 0}
+  gameAudioSource: {fileID: 344745994}
+  otherAudioSource: {fileID: 0}
 --- !u!1 &359058232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2056,7 @@ GameObject:
   m_Component:
   - component: {fileID: 370299842}
   - component: {fileID: 370299843}
+  - component: {fileID: 370299844}
   m_Layer: 0
   m_Name: AsphaltSkid
   m_TagString: Untagged
@@ -2158,6 +2175,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &370299844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370299841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f0d7cf6bf97c74d9b03b1c969d0d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicAudioSource: {fileID: 0}
+  gameAudioSource: {fileID: 370299843}
+  otherAudioSource: {fileID: 0}
 --- !u!1 &389190524
 GameObject:
   m_ObjectHideFlags: 0
@@ -3875,6 +3907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936620010}
   - component: {fileID: 936620011}
+  - component: {fileID: 936620012}
   m_Layer: 0
   m_Name: chatter
   m_TagString: Untagged
@@ -3993,6 +4026,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &936620012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936620009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f0d7cf6bf97c74d9b03b1c969d0d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicAudioSource: {fileID: 0}
+  gameAudioSource: {fileID: 936620011}
+  otherAudioSource: {fileID: 0}
 --- !u!1 &939236733
 GameObject:
   m_ObjectHideFlags: 0
@@ -6510,6 +6558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1331364174}
   - component: {fileID: 1331364175}
+  - component: {fileID: 1331364176}
   m_Layer: 0
   m_Name: detidle
   m_TagString: Untagged
@@ -6628,6 +6677,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1331364176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331364173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f0d7cf6bf97c74d9b03b1c969d0d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicAudioSource: {fileID: 0}
+  gameAudioSource: {fileID: 1331364175}
+  otherAudioSource: {fileID: 0}
 --- !u!1 &1345030438
 GameObject:
   m_ObjectHideFlags: 0
@@ -6638,6 +6702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345030440}
   - component: {fileID: 1345030439}
+  - component: {fileID: 1345030441}
   m_Layer: 0
   m_Name: Gear Switch
   m_TagString: Untagged
@@ -6756,6 +6821,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 569656612}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1345030441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345030438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f0d7cf6bf97c74d9b03b1c969d0d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicAudioSource: {fileID: 0}
+  gameAudioSource: {fileID: 1345030439}
+  otherAudioSource: {fileID: 0}
 --- !u!1001 &1386979448
 PrefabInstance:
   m_ObjectHideFlags: 0
