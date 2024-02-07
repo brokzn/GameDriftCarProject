@@ -10,6 +10,16 @@ public class RaceManager : MonoBehaviour
     public Text timerText;
     public GameObject carStop;
 
+
+    public Canvas EndRaceCanvas;
+
+
+
+
+    public Text endracetimerText;
+
+
+
     private bool raceStarted = false;
     private float raceTime = 0f;
 
@@ -51,6 +61,7 @@ public class RaceManager : MonoBehaviour
 
     void Update()
     {
+        EndRaceCanvas.enabled = false;
         if (raceStarted)
         {
             raceTime += Time.deltaTime;
@@ -74,7 +85,10 @@ public class RaceManager : MonoBehaviour
 
     void FinishRace()
     {
-        raceStarted = false;
-        timerText.text = "Заезд завершен - время: " + FormatRaceTime(raceTime);
+        timerText.text = " ";
+       // raceStarted = false;
+        EndRaceCanvas.enabled = true;
+        endracetimerText.text = "Время заезда - " + FormatRaceTime(raceTime);
+       // Time.timeScale = 0;
     }
 }
